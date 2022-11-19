@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css.css">
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="layout.js" type="text/javascript"></script>	
+<title>CombatJS</title>
+</head>
+<body class="dark">
+	<button class="dark-mode" onclick="darkmode()" >Dark Mode</button>
+	<div class="combat-area">
+		<div class="player" data-player="1">
+			<div class="name" data-name="Decidueye">Decidueye</div>
+			<meter class="hp" value="100" min="0" max="100">100</meter>
+			<div class="img-player" data-action="unknown" ><img src="images/player1.jpg"></div>
+			<div class="moves" >
+				<button class="move" onclick="move1(2)">Tapa</button>
+				<button class="move" onclick="move2(1)">Cura</button>
+				<button class="move" onclick="move3(2)">Soco</button>
+				<button class="move" onclick="move4(2)">OHKO</button>
+			</div>
+		</div>
+		<div class="player" data-player="2">
+			<div class="name" data-name="Incineroar">Incineroar</div>
+			<meter class="hp" value="100" min="0" max="100">100</meter>
+			<div class="img-player"  data-action="unknown" ><img src="images/player2.jpg"></div>
+			<div class="moves" >
+				<button class="move" onclick="move1(1)">Tapa</button>
+				<button class="move" onclick="move2(2)">Cura</button>
+				<button class="move" onclick="move3(1)">Soco</button>
+				<button class="move" onclick="move4(1)">Ohko</button>
+			</div>
+		</div>
+
+	<div class="info">
+		<br>
+		TAPA = Chance de acertar 90% - Causa dano de 10%<br>
+		CURA = Chance de acertar 95% - Cura 15% do HP<br>
+		SOCO = Chance de acertar 50% - Causa dano de 20%<br>
+		OHKO = chance de acertar 05% - Causa One-Hit Knockout
+	</div>
+
+	</div>
+
+	<div class="ongoing" id="winner"><br><img src="images/player2.jpg"> <br> <div id="campeao" ></div>ganhou a batalha<br><br> <button onclick="reload()">Continuar</button> </div>
+
+</body>
+</html>
