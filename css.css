@@ -30,7 +30,7 @@ body.dark{
 
 .combat-area{
 	width: 100%;
-	max-width: 660px;
+	max-width: 740px;
 	margin: 20px auto 0;
 	text-align: center;
 	background: #111;
@@ -149,6 +149,7 @@ body.dark{
 #winner img{
 	width: 100%;
 	max-width: 300px;
+	border-radius: 10px;
 }
 
 #winner button{
