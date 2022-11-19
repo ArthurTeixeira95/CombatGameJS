@@ -35,7 +35,7 @@ function move1(player){
 
     var hp = $(".player[data-player="+player+"] .hp");
     if (Math.ceil(Math.random()*100) < 90){
-        hp.attr('value', Number(hp.attr('value')) - 20);
+        hp.attr('value', Number(hp.attr('value')) - 10);
     }
    
     animationattack(-Number(player)+3);
@@ -50,7 +50,7 @@ function move2(player){
 
     var hp = $(".player[data-player="+player+"] .hp");
     if (Math.ceil(Math.random()*100) < 95){
-        hp.attr('value', Number(hp.attr('value')) + 20);
+        hp.attr('value', Number(hp.attr('value')) + 15);
     }
 
     animationheal(player);
