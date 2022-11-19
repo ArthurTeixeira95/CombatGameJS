@@ -162,3 +162,26 @@ body.dark{
 	box-sizing: border-box;
 	padding: 10px 5px;
 }
+
+.players{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.players #turn{
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	background: #111;
+	opacity: 50%;
+}
+
+.players #turn.left{
+	left: 0;
+}
+
+.players #turn.right{
+	right: 0;
+}

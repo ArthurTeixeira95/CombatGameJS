@@ -39,6 +39,7 @@ function move1(player){
     }
    
     animationattack(-Number(player)+3);
+    turn(-Number(player)+3);
     
     if ( Number(hp.attr('value')) < 1){
         win(-Number(player)+3);
@@ -53,6 +54,7 @@ function move2(player){
     }
 
     animationheal(player);
+    turn(player);
     
 }
 
@@ -65,6 +67,7 @@ function move3(player){
     }
     
     animationattack2(-Number(player)+3);
+    turn(-Number(player)+3);
     
     if ( Number(hp.attr('value')) < 1){
         win(-Number(player)+3);
@@ -81,6 +84,7 @@ function move4(player){
     }
 
     animationattack3(-Number(player)+3);
+    turn(-Number(player)+3);
     
     if ( Number(hp.attr('value')) < 1){
         win(-Number(player)+3);
@@ -100,4 +104,16 @@ function win(player){
 
 function reload(){
     location.reload()
+}
+
+function turn(player){
+
+    if(player == 1){        
+        $("#turn").attr("class","left");
+    }else if(player == 2){        
+        $("#turn").attr("class","right");
+    }else{
+        player = Math.floor(Math.random() * 2) + 1;
+        turn(player);
+    }
 }
