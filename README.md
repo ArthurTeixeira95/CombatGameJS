@@ -1,3 +1,3 @@
 # CombatGameJS
 
-https://htmlpreview.github.io/?https://github.com/ArthurTeixeira95/CombatGameJS/blob/main/index.html
+https://arthurteixeira95.github.io/CombatGameJS/
