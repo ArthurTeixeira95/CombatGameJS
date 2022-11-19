@@ -53,6 +53,10 @@ function move2(player){
         hp.attr('value', Number(hp.attr('value')) + 15);
     }
 
+    if (Number(hp.attr('value')) > Number(hp.attr('max'))) {
+        hp.attr('value', Number(hp.attr('max')));
+    }
+
     animationheal(player);
     turn(player);
     
